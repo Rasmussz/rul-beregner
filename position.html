@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rul viewer</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <h1>Rul viewer</h1>
+  </header>
+
+  <main>
+    <div class="position-page">
+      <div class="person-row">
+        <div class="speech-bubble" id="chosen-shift-label"></div>
+        <div class="person-icon">&#128100;</div>
+      </div>
+
+      <div class="position-controls">
+        <p>Angiv din startposition</p>
+        <select id="position-select">
+          <option value="" selected disabled>vælg</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="create-btn-row">
+      <button class="btn" id="create-btn" disabled>Opret rul oversigt</button>
+    </div>
+  </main>
+
+  <a class="btn btn-secondary btn-back" id="back-link" href="vagttype.html">Tilbage</a>
+
+  <script src="js/shifts.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/position.js"></script>
+</body>
+</html>
